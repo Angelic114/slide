@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>Fantasy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="shortcut icon" href="https://th.bing.com/th/id/R43668837022935d0057aed6228c565f6?rik=shijxHaSINGR8Q&riu=http%3a%2f%2fwww.beautifullife.info%2fwp-content%2fuploads%2f2018%2f02%2f01%2fmost_expensive_diamond_in_the_world.jpg&ehk=6CmUHA6S5RUJ772lIo%2fwwMyB1E5Ypt%2f%2flBmebk14Nkw%3d&risl=&pid=ImgRaw" type="image/x-icon">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">Fantasy Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://colourfreakvintage.files.wordpress.com/2013/06/naohisainoue02.jpg" style="width:100%">
+  <img class="mySlides" src="https://th.bing.com/th/id/R623c4e5e2e3e9db8b49aaf3d9038ffe0?rik=c3V%2fGFlmjBL88g&riu=http%3a%2f%2f3.bp.blogspot.com%2f-Dr7Wj8VMkxY%2fU9-VWpPFdXI%2fAAAAAAAAMEU%2fgjckdcUY8PU%2fs1600%2fFantasy-Wallpaper05.jpg&ehk=%2f9do%2be6NL8N%2bUett%2bI%2fu3Q8mqE%2b9jtfmhB620vopvag%3d&risl=&pid=ImgRaw" style="width:100%">
+  <img class="mySlides" src="https://th.bing.com/th/id/OIP.N-bVN6Q1sX4CRphj00jGggHaFj?pid=Api&rs=1" style="width:100%">
+  <img class="mySlides" src="https://th.bing.com/th/id/R1d1dade6be85e4d954a253904cee68a0?rik=WVDlELMNhy6ffg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-zBJ9xHZ3nzk%2fUN3L_sLS-TI%2fAAAAAAAAQMo%2fbECAa920Nms%2fs1600%2fFantasy%2bArt%2bScenery%2bWallpapers%2b07.jpg&ehk=FILLrmJ8bWGj8xpk6N6aWCzLW1EypmQ5SkxmZnZJQ10%3d&risl=&pid=ImgRaw" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
